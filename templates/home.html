@@ -1,7 +1,10 @@
 <!-- templates/home.html-->
 <h1>Message board homepage</h1>
 <ul>
-    {% for post in all_posts_list %}
-    <li>{{ post.txt }}</li>
+    <li>{{ all_posts_list }}</li>
+    <li>{{ object_list }}</li>
+    <li>{{ abc }}</li>
+    {% for post in object_list %}
+        <li>{{ post }}</li>
     {% endfor %}
 </ul>
